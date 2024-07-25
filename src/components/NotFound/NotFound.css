@@ -1,0 +1,7 @@
+.container-notfound {
+  margin-top: 30px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

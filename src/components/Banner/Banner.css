@@ -1,0 +1,36 @@
+.banner {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  background: linear-gradient(0deg, rgba(82,143,123,1) 0%, rgba(42,73,63,1) 100%);
+  margin-top: 50px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.banner h1 {
+  margin: 0;
+  font-size: 36px;
+  color: #f7c000;
+}
+
+.banner h2 {
+  margin: 10px 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.reservation-button {
+  background-color: #f7c000;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #333;
+}
+
+.reservation-button:hover {
+  background-color: #e6b800;
+}

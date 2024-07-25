@@ -1,0 +1,98 @@
+.menu {
+  padding: 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.menu h1 {
+  font-size: 36px;
+  color: #528F7B;
+}
+
+.menu-items {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu-section {
+  flex: 1;
+  margin: 0 10px;
+  flex-wrap: nowrap;
+}
+
+.menu-section h2 {
+  font-size: 28px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.menu-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu-section li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.menu-section img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  background-color: #ccc; /* Background color if image is not loaded */
+  display: block;
+  position: relative;
+}
+
+.food-icon,
+.beverage-icon {
+  position: relative;
+}
+
+.food-icon::after,
+.beverage-icon::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.food-icon::after {
+  background-image: url('../../assets/food-icon.png');
+}
+
+.beverage-icon::after {
+  background-image: url('../../assets/beverage-icon.png');
+}
+
+.menu-section img:not([src])::after {
+  display: block;
+}
+
+.menu-section img:not([src]) {
+  visibility: hidden;
+  display: inline-block;
+}
+
+.menu-section h3 {
+  font-size: 18px;
+  color: #333;
+  margin: 5px 0;
+}
+
+.menu-section p {
+  font-size: 16px;
+  color: #777;
+  margin: 0;
+}

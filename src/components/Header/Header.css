@@ -1,0 +1,53 @@
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  padding: 10px 20px; /* Додайте відступи зліва і справа для навігації */
+  box-sizing: border-box;
+}
+
+nav a {
+  text-decoration: none; /* Прибрати підкреслення */
+  color: #333; /* Колір тексту для посилань */
+  margin: 0 15px; /* Додати відступи між пунктами меню */
+}
+
+nav a:hover {
+  color: #528F7B;
+}
+
+
+.cart-icon {
+  width: auto;
+  height: 40px;
+  margin: 10px;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  header {
+    width: 100%;
+    background-color: #f4f4f4;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media (max-width: 700px) {
+  h3 {
+    display: none;
+  }
+  nav {
+    justify-content: center;
+  }
+}
